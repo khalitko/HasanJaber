@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.selfie-container {
+    position: relative;
+    width: 400px; /* Adjust based on your image's dimensions */
+    height: 600px; /* Adjust based on your image's dimensions */
+    overflow: hidden;
+}
+
+#selfie {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
