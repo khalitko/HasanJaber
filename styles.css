@@ -19,3 +19,27 @@ body {
     width: 100%;
     height: auto;
 }
+
+.corner-square {
+    position: absolute;
+    width: 50vw; 
+    height: 50vh;
+    background-color: rgba(255,255,255,0.3); /* This is just to visualize the squares. You can remove this once you're satisfied with how the images look. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#top-left { top: 0; left: 0; }
+#top-right { top: 0; right: 0; }
+#bottom-left { bottom: 0; left: 0; }
+#bottom-right { bottom: 0; right: 0; }
+
+#video-player {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

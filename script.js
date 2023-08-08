@@ -12,3 +12,49 @@ document.addEventListener('mousemove', function(event) {
 
     selfie.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
 });
+
+
+const topLeft = document.getElementById("top-left");
+const topRight = document.getElementById("top-right");
+const bottomLeft = document.getElementById("bottom-left");
+const bottomRight = document.getElementById("bottom-right");
+const videoPlayer = document.getElementById("video-player");
+
+topLeft.addEventListener('mouseover', function() {
+    selfie.style.display = 'none';
+    videoPlayer.src = "office.mp4";
+    videoPlayer.style.display = 'block';
+    videoPlayer.play();
+});
+
+topRight.addEventListener('mouseover', function() {
+    selfie.style.display = 'none';
+    videoPlayer.src = "JustDoIt.mp4";
+    videoPlayer.style.display = 'block';
+    videoPlayer.play();
+});
+
+bottomLeft.addEventListener('mouseover', function() {
+    selfie.style.display = 'none';
+    videoPlayer.src = "Sparta.mp4";
+    videoPlayer.style.display = 'block';
+    videoPlayer.play();
+});
+
+bottomRight.addEventListener('mouseover', function() {
+    selfie.style.display = 'none';
+    videoPlayer.src = "whyAreYouRunning.mp4";
+    videoPlayer.style.display = 'block';
+    videoPlayer.play();
+});
+
+function resetDisplay() {
+    videoPlayer.pause();
+    videoPlayer.style.display = 'none';
+    selfie.style.display = 'block';
+}
+
+topLeft.addEventListener('mouseout', resetDisplay);
+topRight.addEventListener('mouseout', resetDisplay);
+bottomLeft.addEventListener('mouseout', resetDisplay);
+bottomRight.addEventListener('mouseout', resetDisplay);
