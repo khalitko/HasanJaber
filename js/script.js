@@ -22,28 +22,28 @@ const videoPlayer = document.getElementById("video-player");
 
 topLeft.addEventListener('mouseover', function() {
     selfie.style.display = 'none';
-    videoPlayer.src = "office.mp4";
+    videoPlayer.src = "assets/videos/office.mp4";
     videoPlayer.style.display = 'block';
     videoPlayer.play();
 });
 
 topRight.addEventListener('mouseover', function() {
     selfie.style.display = 'none';
-    videoPlayer.src = "JustDoIt.mp4";
+    videoPlayer.src = "assets/videos/JustDoIt.mp4";
     videoPlayer.style.display = 'block';
     videoPlayer.play();
 });
 
 bottomLeft.addEventListener('mouseover', function() {
     selfie.style.display = 'none';
-    videoPlayer.src = "Sparta.mp4";
+    videoPlayer.src = "assets/videos/Sparta.mp4";
     videoPlayer.style.display = 'block';
     videoPlayer.play();
 });
 
 bottomRight.addEventListener('mouseover', function() {
     selfie.style.display = 'none';
-    videoPlayer.src = "whyAreYouRunning.mp4";
+    videoPlayer.src = "assets/videos/whyAreYouRunning.mp4";
     videoPlayer.style.display = 'block';
     videoPlayer.play();
 });
